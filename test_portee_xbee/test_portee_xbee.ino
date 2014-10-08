@@ -55,8 +55,8 @@ void flashLed(int pin, int times, int wait) {
 void setup() {
   pinMode(statusLed, OUTPUT);
   pinMode(errorLed, OUTPUT);
-  Serial.begin(9600);
-  xbee.setSerial(Serial);
+  Serial1.begin(57600);
+  xbee.setSerial(Serial1);
 }
 
 void loop() {
